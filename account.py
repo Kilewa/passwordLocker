@@ -63,12 +63,12 @@ def check_details(account):
     """
     return Details.if_detail_exist(account)
 
-def generate_Password():
-    '''
-    generates a random password for the user.
-    '''
-    auto_password=Details.generatePassword()
-    return auto_password  
+# def generate_Password():
+#     '''
+#     generates a random password for the user.
+#     '''
+#     auto_password=Details.generatePassword()
+#     return auto_password  
 
 def copy_password(account):
     """
@@ -86,13 +86,10 @@ def passWordLocker():
         print('*' * 50)
         username = input("User_name: ")
         while True:
-            print(" TP - To type your own pasword:\n GP - To generate random Password")
+            print(" TP - To type your own pasword:")
             password_Choice = input().lower().strip()
             if password_Choice == 'tp':
                 password = input("Enter Password\n")
-                break
-            elif password_Choice == 'gp':
-                password = generate_Password()
                 break
             else:
                 print("Invalid password please try again")
@@ -113,7 +110,7 @@ def passWordLocker():
     while True:
         print("Use these short codes:\n CD - Create a new Detail\n DD - Display Details \n FD - Find a Detail\n GP - Generate A randomn password \n D - Delete credential \n EX - Exit the application \n")
         short_code = input().lower().strip()
-        if short_code == "cc":
+        if short_code == "cd":
             print("Create New Detail")
             print("."*20)
             print("Account name ....")
@@ -121,13 +118,10 @@ def passWordLocker():
             print("Your Account username")
             userName = input()
             while True:
-                print(" TP - To type your own pasword if you already have an account:\n GP - To generate random Password")
+                print(" TP - To type your own pasword if you already have an account: ")
                 password_Choice = input().lower().strip()
                 if password_Choice == 'tp':
                     password = input("Enter Your Own Password\n")
-                    break
-                elif password_Choice == 'gp':
-                    password = generate_Password()
                     break
                 else:
                     print("Invalid password please try again")
@@ -135,7 +129,7 @@ def passWordLocker():
             print('\n')
             print(f"Account Details for: {account} - UserName: {userName} - Password:{password} created succesfully")
             print('\n')
-        elif short_code == "dc":
+        elif short_code == "dd":
             if display_accounts_details():
                 print("Here's your list of accounts: ")
                 
@@ -147,7 +141,7 @@ def passWordLocker():
                 print('*' * 30)
             else:
                 print("You don't have any details saved yet..........")
-        elif short_code == "fc":
+        elif short_code == "fd":
             print("Enter the Account Name you want to search for")
             search_name = input().lower()
             if find_detail(search_name):
@@ -171,11 +165,6 @@ def passWordLocker():
                 print('\n')
             else:
                 print("That Detail you want to delete does not exist  in database")
-
-        elif short_code == 'gp':
-
-            password = generate_Password()
-            print(f" {password} Has been generated succesfull. You can proceed to use it to your account")
         elif short_code == 'ex':
             print("Thanks for using passwords Database.. See you next time!")
             break
