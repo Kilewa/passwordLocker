@@ -29,11 +29,11 @@ class User:
         delete_account method deletes a  saved account from the list
         '''
         User.user_list.remove(self)
-    class Details():
+class Details():
         """
         Create details class to help create new objects of credentials
         """
-        Details_list = []
+        details_list = []
         @classmethod
         def verify_user(cls,username, password):
             """
@@ -50,5 +50,23 @@ class User:
                 """
             self.account = account
             self.userName = userName
-            self.password = password    
+            self.password = password  
+        def save_details(self):
+            """
+            method to store a new details to the details list
+            """
+            Details.details_list.append(self)   
+        def delete_details(self):
+            """
+            delete_details method that deletes an account details from the details_list
+            """
+            Details.details_list.remove(self)
+
+        @classmethod
+        def find_details(cls, account):
+            """
+            Method that takes in a account_name and returns a detail that matches that account_name.
+
+            """
+    
     
