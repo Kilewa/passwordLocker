@@ -29,4 +29,14 @@ class User:
         delete_account method deletes a  saved account from the list
         '''
         User.user_list.remove(self)
+    class Details():
+        """
+        Create details class to help create new objects of credentials
+        """
+        Details_list = []
+        @classmethod
+        def verify_user(cls,username, password):
+            """
+            method to verify whether the user is in our user_list or not
+            """    
     
