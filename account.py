@@ -48,4 +48,10 @@ def delete_detail(details):
     Function to delete a details from details list
 
     """
-    details.delete_details()    
+    details.delete_details()  
+
+def find_detail(account):
+    """
+    Function that finds a details by an account name and returns the details that belong to that account
+    """
+    return Details.find_detail(account)
