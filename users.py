@@ -68,5 +68,17 @@ class Details():
             Method that takes in a account_name and returns a detail that matches that account_name.
 
             """
+        @classmethod
+        def copy_password(cls,account):
+            found_details = Details.find_details(account)
+            pyperclip.copy(found_details.password)    
     
-    
+        @classmethod
+        def if_detail_exist(cls, account):
+            """
+            Method that checks if a detail exists from the credential list and returns true or false depending if the detail exists.
+            """
+            for detail in cls.details_list:
+                if detail.account == account:
+                    return True
+            return False
