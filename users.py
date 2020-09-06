@@ -77,6 +77,9 @@ class Details():
         Method that takes in a account_name and returns a detail that matches that account_name.
 
         """
+        for detail in cls.details_list:
+            if detail.account == account:
+                return detail
     @classmethod
     def copy_password(cls, account):
         found_details = Details.find_details(account)
@@ -100,7 +103,7 @@ class Details():
         """
         return cls.details_list
 
-    def generatePassword(self,stringLength=8):
+    def generatePassword(self, stringLength=8):
         """Generate a random password string of letters and digits and special characters"""
         password = string.ascii_uppercase + \
             string.ascii_lowercase + string.digits + "~!@#$%^&*"
