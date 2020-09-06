@@ -13,3 +13,12 @@ def save_user(user):
     Function to save a new user
     '''
     user.save_user()    
+def display_user():
+    """
+    Function to display existing user
+    """
+    return User.display_user()
+def login_user(username,password):
+    """
+    function that checks whether a user exist and then login the user in.
+    """        
