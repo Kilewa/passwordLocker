@@ -54,7 +54,7 @@ class Details():
     def __init__(self, account, userName, password):
         """
         method that defines user Details to be stored
-            """
+        """
         self.account = account
         self.userName = userName
         self.password = password
@@ -102,9 +102,3 @@ class Details():
 
         """
         return cls.details_list
-    # @classmethod
-    # def generatePassword(stringLength=8):
-    #     """Generate a random password string of letters and digits and special characters"""
-    #     password = string.ascii_uppercase + \
-    #         string.ascii_lowercase + string.digits + "~!@#$%^&*"
-    #     return ''.join(random.choice(password) for i in range(stringLength))

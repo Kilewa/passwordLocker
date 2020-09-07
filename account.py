@@ -63,13 +63,6 @@ def check_details(account):
     """
     return Details.if_detail_exist(account)
 
-# def generate_Password():
-#     '''
-#     generates a random password for the user.
-#     '''
-#     auto_password=Details.generatePassword()
-#     return auto_password  
-
 def copy_password(account):
     """
     A funct that copies the password using the pyperclip framework
