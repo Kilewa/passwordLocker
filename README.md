@@ -9,7 +9,7 @@ with passwords and the app will store them so they can use them to login to thei
 The Users will:
 * Create an account for the app or log in.
 * Store any existing account details for different accounts.
-* Delete stored accunt details.
+* Delete stored account details.
 * Copy their details to the clipboard.
 
 ## Installation/Set up
