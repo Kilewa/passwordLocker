@@ -14,7 +14,7 @@ The Users will:
 
 ## Installation/Set up
 
-###App requirements
+### App requirements
 *python3.8
 *Pyperclip
 *Pip3
