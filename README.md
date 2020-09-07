@@ -15,9 +15,9 @@ The Users will:
 ## Installation/Set up
 
 ### App requirements
-*python3.8
-*Pyperclip
-*Pip3
+   *python3.8
+   *Pyperclip
+   *Pip3
 
 *clone ``` https://github.com/Kilewa/passwordLocker ```
 *cd into passwordLocker
@@ -27,9 +27,9 @@ The Users will:
    -./account.py
 ##Technologies used
 
-*Python3.8
-##known bugs
-No known bugs
+   *Python3.8
+## known bugs
+   No known bugs
 
 ## Contact info
 
