@@ -7,10 +7,10 @@ with passwords and the app will store them so they can use them to login to thei
 
 ## User Story:
 The Users will:
-*Create an account for the app or log in.
-*Store any existing account details for different accounts.
-*Delete stored accunt details.
-*Copy their details to the clipboard.
+* Create an account for the app or log in.
+* Store any existing account details for different accounts.
+* Delete stored accunt details.
+* Copy their details to the clipboard.
 
 ## Installation/Set up
 
