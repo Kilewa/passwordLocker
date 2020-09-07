@@ -1,4 +1,4 @@
-# passwordLocker
+# PasswordLocker
 
 ## Description
 
@@ -25,7 +25,7 @@ The Users will:
 * To run the app, open the passwordLocker in terminal and run the command below:
    -chmod +x account.py
    -./account.py
-##Technologies used
+## Technologies used
 
    * Python3.8
 ## known bugs
