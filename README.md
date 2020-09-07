@@ -15,19 +15,19 @@ The Users will:
 ## Installation/Set up
 
 ### App requirements
-   *python3.8
-   *Pyperclip
-   *Pip3
+   * python3.8
+   * Pyperclip
+   * Pip3
 
-*clone ``` https://github.com/Kilewa/passwordLocker ```
-*cd into passwordLocker
+* clone ``` https://github.com/Kilewa/passwordLocker ```
+* cd into passwordLocker
 ### Running the app
 * To run the app, open the passwordLocker in terminal and run the command below:
    -chmod +x account.py
    -./account.py
 ##Technologies used
 
-   *Python3.8
+   * Python3.8
 ## known bugs
    No known bugs
 
